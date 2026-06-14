@@ -1,0 +1,106 @@
+hum jo bhi front end bnata han -> Ui 
+pr har aplication ma behind the seen kuch processing ho rhi hoti ha 
+
+har application ko backend ki zrurat hoti ha 
+hamara pass 1 data base hot aha wo 1 asa box ha jis ma hum apna data store karta han 
+or wo box duniya ki khi gaja pa available hota ha 
+
+forntend direct database sa bat nhi kar skat a sirf (firebase or supabase sa karta ha)
+
+usa bat karna ka lia chiya hota ha server  
+server 1 software hota ha 
+
+frontend server ko request karta ha
+ or server frontend ko response karta ha 
+
+server asa computer ha jo 24hour active ha 
+
+
+1: get
+2: post
+3: delete
+4: put -> edit
+
+
+jab bhi front end ko backend sa communicate karna ho ga chaya backend jis bhi language ma ho wo json ma ho ga
+
+ab backend ki deploymet karna ka lia pay karna ho ga -> pad hosting karni hoti ha 
+1: google cloud
+2: 
+
+agr no sql use karna ho to (postgrese) -> sequalize 
+or age (mangodb) ka lia mangoose ka use karn ga 
+
+
+express nodejs ka frame work ha 
+
+
+npm init -y    package manager ha 
+
+
+type = module   -> emport export karna ka lia 
+
+
+Express server bnana ka lia use hota ha jo har waqt chal rha hota ha 
+
+
+
+api ko test karna ka lia 2 tarika gab 
+1: postman 
+2: Thundar Client
+
+
+
+midlewear -> jata jata muj sa milta wa jana 3 cheza milti han req , res , next 
+
+
+app.use(express(json)-> jo data a rha ha wo json ki form ma ho ga usa javascript ma change kar day ga -> ya 1 middlewear ha 
+
+Client
+   |
+   | JSON Data
+   v
+express.json()
+   |
+   v
+req.body = {
+   name: "Mozam",
+   age: 21
+}
+Real Example
+
+
+
+Jab browser ya frontend server ko data bhejta hai, data different formats me ho sakta hai.
+
+Example frontend ye bhej raha hai:
+
+{
+  "name": "Mozam",
+  "age": 21
+}
+
+Ye JSON format hai.
+
+Lekin Express by default is JSON data ko samajh nahi pata. Agar tum bina middleware ke check karo:
+
+app.post('/user', (req, res) => {
+    console.log(req.body);
+});
+
+to req.body aksar:
+
+undefined
+
+aa sakta hai.
+
+Isliye hum middleware lagate hain:
+
+app.use(express.json());
+
+Ye middleware request ke andar aane wale JSON data ko read karta hai aur usko JavaScript object me convert karke req.body me rakh deta hai.
+
+
+
+
+kuch bhi parna ka la youtube pa chala hyan warna gdemy pa chala jayan sara course miln ga 

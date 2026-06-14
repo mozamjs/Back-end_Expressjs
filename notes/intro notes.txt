@@ -1,0 +1,42 @@
+Node.js -> (framework)=> Express.js
+
+node.js(related to javascript)  run time environment
+built on google's v8 javascript engine 
+used to create server side applications.
+fase and efficent
+
+Express js -> framework of nodejs -> use for creating api.
+
+provide midleware support (check point -> bich ka banda)
+
+For installing express
+1:npm init -> use this command to create a package.json file for your application 
+2:npm install express
+3: run(node filename.js) bar bar run nhi karna para ga -> solution=(nodemon)
+
+api testing tool
+1:thunder client->(for testing)
+2:postman 
+
+
+nodemon -> package ha bar bar run nhi karna prta 
+
+case:1 npm install nodemon -> to ya localy project ma install kar day ga nodemon ko.
+
+phir package.json ma -> 
+"scripts": {
+  "start": "node index.js",
+}
+
+run karna ka lia -> npx nodemon file ka name 
+.
+case:2 just dev add kar do 
+
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+}
+agr script ma dev laga do to -> (npm run dev) pa chala ga
+
+case:3  agr npm install -g nodemon (to globaly system pa install ho jaya ga )
+run karna ka lia -> nodemon file ka name
